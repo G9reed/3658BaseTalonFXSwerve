@@ -3,10 +3,10 @@ import edu.wpi.first.wpilibj2.command.SubsystemBase;
 import com.revrobotics.CANSparkMax;
 import com.revrobotics.CANSparkMaxLowLevel.MotorType;
 
-public class ClimberSubsystem extends SubsystemBase {
+public class Climber extends SubsystemBase {
     private final CANSparkMax liftMotor;
 
-    public ClimberSubsystem() {
+    public Climber() {
         // Initialize the REV NEO motor for the climber
         liftMotor = new CANSparkMax(10, MotorType.kBrushless); // Replace 10 with your actual CAN ID
 
@@ -31,8 +31,4 @@ public class ClimberSubsystem extends SubsystemBase {
     public void periodic() {
         // Perform periodic tasks (e.g., sensor checks, updates)
     }
-}
-
-public class Climber {
-    
 }

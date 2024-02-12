@@ -5,13 +5,13 @@ import com.ctre.phoenix6.controls.PositionVoltage;
 import com.ctre.phoenix6.controls.VelocityVoltage;
 import com.ctre.phoenix6.hardware.TalonFX;
 
-public class ShooterSubsystem extends SubsystemBase {
+public class Shooter extends SubsystemBase {
     private TalonFX shooterLeft;
     private TalonFX shooterRight;
     private TalonFX shooterTilt;
     private TalonFX shooterExtension;
 
-    public ShooterSubsystem() {
+    public Shooter() {
         // Initialize the Falcon 500 motors for shooter subsystem
         shooterLeft = new TalonFX(10); // Replace 10 with your actual CAN ID
         shooterRight = new TalonFX(11); // Replace 11 with your actual CAN ID
@@ -47,8 +47,4 @@ public class ShooterSubsystem extends SubsystemBase {
     public void periodic() {
         // Perform periodic tasks (e.g., sensor checks, updates)
     }
-}
-
-public class Shooter {
-    
 }

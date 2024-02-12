@@ -5,11 +5,11 @@ import com.ctre.phoenix6.controls.PositionVoltage;
 import com.ctre.phoenix6.controls.VelocityVoltage;
 import com.ctre.phoenix6.hardware.TalonFX;
 
-public class IntakeSubsystem extends SubsystemBase {
+public class Intake extends SubsystemBase {
     private TalonFX intakeTilt; // Motor for tilting the intake
     private TalonFX intakeRoller; // Motor for taking in the game piece
 
-    public IntakeSubsystem() {
+    public Intake() {
         // Initialize the Falcon 500 motors for intake tilt and intake roller
         intakeTilt = new TalonFX(10); // Replace 10 with your actual CAN ID
         intakeRoller = new TalonFX(11); // Replace 11 with your actual CAN ID
@@ -38,8 +38,4 @@ public class IntakeSubsystem extends SubsystemBase {
     public void periodic() {
         // Perform periodic tasks (e.g., sensor checks, updates)
     }
-}
-
-public class Intake {
-    
 }
